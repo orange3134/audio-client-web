@@ -1,54 +1,62 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resonite AudioClient</title>
     <meta
       name="description"
-      content="Resonite AudioClient は、Resonite を通話アプリのように使いたい人のためのデスクトップクライアントです。最新リリースをすぐにダウンロードできます。">
-    <meta name="theme-color" content="#09111d">
-    <meta property="og:title" content="Resonite AudioClient">
+      content="Resonite AudioClient は、Resonite を通話アプリのように使いたい人のためのデスクトップクライアントです。最新リリースをすぐにダウンロードできます。"
+    />
+    <meta name="theme-color" content="#09111d" />
+    <meta property="og:title" content="Resonite AudioClient" />
     <meta
       property="og:description"
-      content="Resoniteを通話アプリとして使いたい。そう思ったこと、一度はありますよね？">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/AudioClientIcon.png">
-    <link rel="icon" type="image/png" href="images/AudioClientIcon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      content="Resoniteを通話アプリとして使いたい。そう思ったこと、一度はありますよね？"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/AudioClientIcon.png" />
+    <link rel="icon" type="image/png" href="images/AudioClientIcon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <div class="noise"></div>
+
       <header class="topbar">
         <a class="brand" href="#top" aria-label="Resonite AudioClient Home">
-          <img src="images/AudioClientIcon.png" alt="" width="44" height="44">
+          <img src="images/AudioClientIcon.png" alt="" width="44" height="44" />
           <span>Resonite AudioClient</span>
         </a>
         <a
           class="topbar-link"
           href="https://github.com/orange3134/ResoniteAudioClient/releases/latest"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           Latest Release
         </a>
       </header>
 
       <main id="top">
         <section class="hero">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-emblem">
+              <img src="images/AudioClientIcon.png" alt="" />
+            </div>
+          </div>
+
           <div class="hero-copy">
             <p class="eyebrow">VOICE-FIRST DESKTOP CLIENT FOR RESONITE</p>
             <h1>Resonite AudioClient</h1>
             <p class="lead">
-              Resoniteを通話アプリとして使いたい。そう思ったこと、一度はありますよね？
-            </p>
-            <p class="sublead">
-              ワールドへ入る前の重さや煩雑さをできるだけ減らして、まずは“声でつながる”ことに集中するためのクライアントです。
+              Resoniteを通話アプリとして使いたい。<br />そう思ったこと、一度はありますよね？
             </p>
 
             <div class="cta-cluster">
@@ -57,41 +65,35 @@
                 class="button button-primary"
                 href="https://github.com/orange3134/ResoniteAudioClient/releases/latest"
                 target="_blank"
-                rel="noreferrer">
-                最新リリースをダウンロード
+                rel="noreferrer"
+              >
+                <span class="button-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path
+                      d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.29a1 1 0 1 1 1.4 1.41l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.41L11 12.59V4a1 1 0 0 1 1-1Z"
+                    ></path>
+                    <path
+                      d="M5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>ダウンロード</span>
               </a>
               <a
-                class="button button-secondary"
+                class="button button-secondary button-compact"
                 href="https://github.com/orange3134/ResoniteAudioClient"
                 target="_blank"
-                rel="noreferrer">
-                GitHub を見る
+                rel="noreferrer"
+              >
+                <span class="button-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.3-5.6-6A4.7 4.7 0 0 1 6.4 8c-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C18 4.6 19 4.9 19 4.9c.7 1.6.3 2.8.2 3.1a4.7 4.7 0 0 1 1.2 3.3c0 4.7-2.9 5.7-5.7 6 .5.4.9 1.1.9 2.3v3.5c0 .4.2.8.8.6A12 12 0 0 0 12 .5Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>GitHub</span>
               </a>
-            </div>
-
-            <div class="release-panel" aria-live="polite">
-              <div class="release-status">
-                <span class="status-label">Release Status</span>
-                <strong id="release-version">最新リリースを確認中...</strong>
-              </div>
-              <p id="release-notes" class="release-notes">
-                公開後はここに最新バージョンとダウンロード候補が表示されます。
-              </p>
-              <div id="asset-links" class="asset-links"></div>
-            </div>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="radar-frame">
-              <div class="radar-ring ring-a"></div>
-              <div class="radar-ring ring-b"></div>
-              <div class="radar-ring ring-c"></div>
-              <div class="radar-beam"></div>
-              <img src="images/AudioClientIcon.png" alt="">
-            </div>
-            <div class="visual-card">
-              <p>DOWNLOAD FIRST</p>
-              <strong>Latest release button is always in view.</strong>
             </div>
           </div>
         </section>
@@ -99,40 +101,42 @@
         <section class="feature-grid" aria-label="Highlights">
           <article class="feature-card accent-cyan">
             <p class="feature-index">01</p>
-            <h2>迷わない導線</h2>
-            <p>
-              最上部のメイン CTA と最新リリース表示を固定の主役にして、最短でダウンロードまで進める構成にしています。
-            </p>
+            <h2>超軽量UI</h2>
+            <p>通話に最適化された軽量設計で快適な会話をサポート</p>
           </article>
           <article class="feature-card accent-amber">
             <p class="feature-index">02</p>
-            <h2>GitHub Releases 連携</h2>
+            <h2>専用ワールド</h2>
             <p>
-              公開後は GitHub API から最新リリースを取得し、バージョン表示とアセットリンクを自動更新します。
+              AudioClientでの利用に最適な機能を備えた専用ワールドでグラフィカルクライアントとチャットや画像のやりとりが可能
             </p>
           </article>
           <article class="feature-card accent-slate">
             <p class="feature-index">03</p>
-            <h2>Github Pages 向け</h2>
-            <p>
-              ビルド不要の静的構成なので、そのまま Pages に載せられます。特別なデプロイ環境は必要ありません。
-            </p>
+            <h2>同時起動</h2>
+            <p>グラフィカルクライアントとの同時起動にも対応</p>
           </article>
         </section>
 
-        <section class="closing-band">
-          <div>
-            <p class="eyebrow">READY TO JOIN</p>
-            <h2>配布開始後はここからすぐ入れます。</h2>
-          </div>
-          <a
-            class="button button-primary"
-            href="https://github.com/orange3134/ResoniteAudioClient/releases/latest"
-            target="_blank"
-            rel="noreferrer">
-            最新版を開く
-          </a>
-        </section>
+        <footer class="site-note">
+          <p>
+            Resonite
+            AudioClientは有志によって開発されたResoniteのカスタムGUIです。オリジナルのResoniteを開発するYellow
+            Dog Man Studios s.r.o.とはなんら関係がありません。
+          </p>
+          <p>
+            AudioClientを利用するには予めオリジナルのResoniteをSteamからインストールしておく必要があります。
+          </p>
+          <p>
+            <a
+              href="https://store.steampowered.com/app/2519830/Resonite/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resonite Steamページ
+            </a>
+          </p>
+        </footer>
       </main>
     </div>
 
